@@ -1,6 +1,6 @@
 # IA DataView — HealthCare Solutions
 
-Projeto de Data Science desenvolvido para a disciplina de Inteligência Artificial e Análise de Dados na Unifecaf.
+Projeto de Data Science desenvolvido para a disciplina de Data Science na Unifecaf.
 
 O objetivo é analisar dados clínicos de recém-nascidos para identificar tendências de saúde e prever riscos potenciais usando técnicas de Machine Learning e visualização interativa.
 
