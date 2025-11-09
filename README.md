@@ -4,6 +4,8 @@ Projeto de Data Science desenvolvido para a disciplina de Data Science na Unifec
 
 O objetivo é analisar dados clínicos de recém-nascidos para identificar tendências de saúde e prever riscos potenciais usando técnicas de Machine Learning e visualização interativa.
 
+Link do vídeo no Youtube: https://youtu.be/dVEKiyFsNhU
+
 ---
 
 ![Dashboard](dash.png)
