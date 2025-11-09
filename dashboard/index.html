@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Solutions - Dashboard de Pacientes</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+    <!-- Cabeçalho -->
+    <header class="bg-blue-700 text-white text-center py-6 shadow-lg">
+        <h1 class="text-3xl font-bold">📊 Painel de Tendências - HealthCare Solutions</h1>
+        <p class="text-sm opacity-80">Análise preditiva dos riscos à saúde neonatal</p>
+    </header>
+
+    <!-- Conteúdo -->
+    <main class="max-w-6xl mx-auto p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+        <!-- Card 1: Distribuição de risco -->
+        <div class="bg-white rounded-2xl shadow p-5">
+            <h2 class="text-xl font-semibold mb-2 text-gray-700">Distribuição de Níveis de Risco</h2>
+            <canvas id="riskChart" height="150"></canvas>
+        </div>
+
+        <!-- Card 2: Sexo dos pacientes -->
+        <div class="bg-white rounded-2xl shadow p-5">
+            <h2 class="text-xl font-semibold mb-2 text-gray-700">Distribuição por Sexo</h2>
+            <canvas id="genderChart" height="150"></canvas>
+        </div>
+
+        <!-- Card 3: Temperatura média -->
+        <div class="bg-white rounded-2xl shadow p-5 md:col-span-2">
+            <h2 class="text-xl font-semibold mb-2 text-gray-700">Temperatura Média por Nível de Risco</h2>
+            <canvas id="tempChart" height="120"></canvas>
+        </div>
+
+        <!-- Card 3: Risco por sexo -->
+        <div class="bg-white rounded-2xl shadow p-5 md:col-span-2">
+            <h2 class="text-xl font-semibold mb-4 text-gray-700 text-center">Distribuição de Risco por Gênero</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="text-center">
+                    <h3 class="text-md font-semibold mb-2 text-gray-600">Masculino</h3>
+                    <canvas id="maleRiskChart" height="140"></canvas>
+                </div>
+                <div class="text-center">
+                    <h3 class="text-md font-semibold mb-2 text-gray-600">Feminino</h3>
+                    <canvas id="femaleRiskChart" height="140"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: Dados recentes -->
+        <div class="bg-white rounded-2xl shadow p-5 md:col-span-2 overflow-x-auto">
+            <h2 class="text-xl font-semibold mb-2 text-gray-700">Últimos Registros</h2>
+            <table class="w-full text-left text-sm">
+                <thead class="bg-blue-100">
+                    <tr>
+                        <th class="p-2">ID</th>
+                        <th class="p-2">Data</th>
+                        <th class="p-2">Sexo</th>
+                        <th class="p-2">Temperatura (°C)</th>
+                        <th class="p-2">Risco Previsto</th>
+                    </tr>
+                </thead>
+                <tbody id="dataTable" class="divide-y divide-gray-200"></tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer class="text-center text-gray-500 text-sm py-4">
+        HealthCare Solutions © 2025 — Projeto Acadêmico Unifecaf
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

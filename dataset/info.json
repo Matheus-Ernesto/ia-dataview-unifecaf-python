@@ -1,0 +1,11 @@
+{
+    "arquivos": [
+        {
+            "id": 0,
+            "arquivo": "newborn_health_monitoring_with_risk.csv",
+            "tipo": "kaggle csv",
+            "tamanho_kb": 343.74,
+            "linhas": 3000
+        }
+    ]
+}
